@@ -8,11 +8,6 @@
                     <div class="card-header">Dashboard</div>
 
                     <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
                         <a href="{{url('/create')}}" class="btn btn-primary bg-secondary" role="button"
                            aria-disabled="true">Add Task</a>
                         <table class="table table-bordered">
