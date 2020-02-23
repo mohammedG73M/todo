@@ -1,0 +1,27 @@
+#Installing laravel via composer:
+composer global require laravel/installer
+
+#Create Project:
+laravel new ProjectName
+OR:
+composer create-project --prefer-dist laravel/laravel ProjectName
+
+#installing node.js files:
+npm install
+npm run dev
+
+#Create Auth Files:
+composer require laravel/ui --dev
+php artisan ui vue --auth
+
+#Create Model With Migration:
+php artisan make:model ModelName -m
+
+#Create Controller:
+php artisan make:controller ControllerName
+
+#migrate to database:
+php artisan migrate:fresh
+
+#Start a server:
+php artisan serve
