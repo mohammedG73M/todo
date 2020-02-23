@@ -29,12 +29,12 @@ class HomeController extends Controller
         return view('home', compact('todos'));
     }
 
-    public function addPage()
+    public function create()
     {
         return view('add');
     }
 
-    public function addTodo(Request $request)
+    public function store(Request $request)
     {
         $todo = new Todo;
 
@@ -46,7 +46,7 @@ class HomeController extends Controller
         return redirect('home');
     }
 
-    public function editPage($id)
+    public function edit($id)
     {
         $todo = Todo::find($id);
         if (Auth::user()->id != $todo->user_id) {
@@ -55,7 +55,7 @@ class HomeController extends Controller
         return view('edit', ['todo' => $todo]);
     }
 
-    public function edit(Request $request, $id)
+    public function update(Request $request, $id)
     {
         if ($todo = Todo::find($id)) {
             if (Auth::user()->id != $todo->user_id) {

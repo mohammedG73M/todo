@@ -7,7 +7,7 @@
                     <div class="card-header">Add Task</div>
 
                     <div class="card-body">
-                        <form action="{{url('/addtask')}}" id="form" method="post">
+                        <form action="{{url('/store')}}" id="form" method="post">
                             @csrf
                             <div class="form-group">
                                 <label for="task">Task</label>

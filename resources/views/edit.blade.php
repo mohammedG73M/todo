@@ -7,7 +7,7 @@
                     <div class="card-header">Edit Task</div>
 
                     <div class="card-body">
-                        <form action="{{url('/edittask/'. $todo->id)}}" id="form" method="post">
+                        <form action="{{url('/update/'. $todo->id)}}" id="form" method="post">
                             @csrf
                             <div class="form-group">
                                 <label for="task">Task</label>

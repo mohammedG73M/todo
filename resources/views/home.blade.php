@@ -13,7 +13,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        <a href="{{url('/add')}}" class="btn btn-primary bg-secondary" role="button"
+                        <a href="{{url('/create')}}" class="btn btn-primary bg-secondary" role="button"
                            aria-disabled="true">Add Task</a>
                         <table class="table table-bordered">
                             <thead class="thead-light">

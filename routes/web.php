@@ -18,8 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::post('/addtask', 'HomeController@addTodo');
-Route::get('/add', 'HomeController@addPage');
+Route::post('/store', 'HomeController@store');
+Route::get('/create', 'HomeController@create');
 Route::get('/delete/{id}', 'HomeController@delete');
-Route::post('/edittask/{id}', 'HomeController@edit');
-Route::get('/edit/{id}', 'HomeController@editPage');
+Route::post('/update/{id}', 'HomeController@update');
+Route::get('/edit/{id}', 'HomeController@edit');
